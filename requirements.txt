@@ -4,3 +4,4 @@ keras_preprocessing
 numpy
 nltk
 tensorflow
+sklearn
