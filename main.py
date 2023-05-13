@@ -59,7 +59,7 @@ def main():
     x = Conv1D(128, 5, activation='relu')(x)
     x = MaxPooling1D(5)(x)
     x = Conv1D(128, 5, activation='relu')(x)
-    x = MaxPooling1D(35)(x) # global max pooling (changed from 35 to 3)
+    x = MaxPooling1D(35)(x) # global max pooling
     x = Flatten()(x)
     x = Dense(128, activation='relu')(x)
     preds = Dense(3, activation='softmax')(x)
